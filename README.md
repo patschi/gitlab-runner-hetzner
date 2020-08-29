@@ -4,7 +4,7 @@ Run your ci jobs on Hetzner cloud with the help of gitlab ci and the [docker-mac
 
 ## Usage
 
-Use [this image](https://hub.docker.com/r/mawalu/hetzner-gitlab-runner) instead of the `gitlab/gitlab-runner` image and set `MachineDriver` to `hetzner` in your runner configuration.
+Use [this image](https://hub.docker.com/r/patschi/gitlab-runner-hetzner) instead of the `gitlab/gitlab-runner:alpine` image and set `MachineDriver` to `hetzner` in your runner configuration.
 
 Example config.toml:
 
@@ -43,9 +43,8 @@ check_interval = 0
 
 ## Versions
 
-Currently this image is build using the `gitlab/gitlab-runner:latest` image and the latest docker-machine hetzner plugin. If you need builds for another version feel free to open an PR.
+Currently this image is build using the `gitlab/gitlab-runner:alpine` image and the latest docker-machine hetzner plugin.
 
 ## License 
 
 MIT
-
